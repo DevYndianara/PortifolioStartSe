@@ -1,45 +1,52 @@
 /*Fontes do texto*/
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
 /*
     font-family: 'Press Start 2P', cursive;
     font-family: 'Special Elite', cursive;
+    font-family: 'Leckerli One', cursive;
 */
 * {
     font-family: 'Special Elite', cursive;
 }
 
-/*Cabeçalho navegação*/
+/*Cabeçalho e navegação*/
 nav {
-    height: 80px;
+    height: 90px;
     background-color: #9932CC;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*padding: 0rem 10vw;*/ /*valor proporcional ao navegador*/
+    border: red 1px solid;
+    margin: 0;
+}
+#title-home a {
+    font-family: 'Leckerli One', cursive;
+    color: #111111;
+    padding: 1rem 0 0 5rem;
+    font-size: 2.5rem;
+    border: red 1px solid;
+}
+.nav-itens{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center; /*alinhamento links*/
-    padding: 0rem 10vw; /*valor proporcional ao navegador*/
+    font-family: 'Press Start 2P', cursive;
+    color: #111111;
+    border: red 1px solid;
 }
-nav .nav-itens {
-    font-family: 'Press Start 2P', cursive;    
-    text-decoration: none;
-    /*font-weight: bold;*/ /*peso da fonte*/
-    color: #000000;
-    padding: 0 1rem;
-}
-nav .nav-itens:hover {
+.nav-itens:hover {
     color: #00ffff;
     transition: 0.3s;
-}
-header {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 1.5rem;
-    /*font-weight: bold;*/ /*peso da fonte*/
-    padding: 0 2rem;
 }
 /*Fim cabeçalho e nav*/
 
 /*Sobre*/
 #about {
-    background: #9932CC;
+    background: #707070;
     height: 80vw;
 }
 .education {
@@ -91,10 +98,9 @@ span {
     justify-content: right;
     border-radius: 5px 90px;
 }
-
+/*Fim sobre*/
 
 /*Corpo do formulário*/
-
 h2 {
     color: #fff;
     margin-bottom: 20px; /*Necessário reduzir o margin para não descer muito os outros elementos*/
@@ -143,11 +149,28 @@ form p, legend {
 #userName:focus, #userJob{
     background-color: #00ffff;
 }
+#form-button {
+    font-family: 'Press Start 2P', cursive; 
+    display: inline-block;
+    margin-top: 40px;
+    width: 25vw;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border: none;
+    color: #222222;
+    background-color: #9932CC;
+    cursor: pointer;
+    border-radius: 20px 35px 20px 35px;
+}
+#form-button:hover {
+    background: #00ffff;
+    transition: 0.3s;
+}
 /*Fim corpo formulário*/
 
-/*Estilização container, img e botão ENVIAR*/
+/*Página principal*/
 .container {
-    display: grid; /*Contém container esquerda e direita*/
+    display: grid; /*Contém container esquerda*/
     grid-template-columns: 1fr 1fr;
     height: 95vh;
     padding: 3rem 15vw;
@@ -175,23 +198,6 @@ h1 {
     display: flex;
     flex-wrap: none;
 }
-#form-button {
-    font-family: 'Press Start 2P', cursive; 
-    display: inline-block;
-    margin-top: 40px;
-    width: 25vw;
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    border: none;
-    color: #222222;
-    background-color: #9932CC;
-    cursor: pointer;
-    border-radius: 20px 35px 20px 35px;
-}
-#form-button:hover {
-    background: #00ffff;
-    transition: 0.3s;
-}
 #CTA-button {
     font-family: 'Press Start 2P', cursive;
     padding: 1rem 3rem;
@@ -205,16 +211,17 @@ h1 {
     transition: 0.3s;
     cursor: pointer;
 }
-#home {
-    background-color: #fff;
+#home-page {
+    background: #fff;
 }
 /*Fim estilização*/
 
 /*Rodapé*/
 footer {
     background-color: #222222;
-    display: flexbox;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
     padding: 20px;
 }
@@ -227,5 +234,3 @@ footer p {
     margin: 60px;
 }
 /*Fim estilização rodapé*/
-
-/*Responsividade*/
