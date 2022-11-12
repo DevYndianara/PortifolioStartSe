@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="imagem/x-icon" href="./img/favicon.ico">
+    <title>Dev Web</title>
+</head>
+<body>
+    <nav>
+        <header>Yndianara</header>
+        <section>
+            <a class="nav-itens" href="#home">Home</a>
+            <a class="nav-itens" href="#about">Sobre</a>            
+            <a class="nav-itens" href="#form">Formulário</a>
+        </section>
+    </nav>
+    <section id="home">
+        <div class="container">
+            <div class="column-left">
+                <h1>Aqui é só o início</h1> <!--Título principal, apenas ele como h1-->
+                <p class="pro">
+                    
+                </p>
+                <a id="CTA-button" href="#form">Comece agora!</a>
+            </div>
+            <picture>
+                <img src="/img/121047-pcguy.gif" alt="illustration" id="home-image" />
+            </picture>
+        </div>
+    </section>
+    <section id="about" >
+        <div class="education">
+        <h3>Sobre a desenvolvedora</h3>
+            <p class="about-dev">
+                Seja bem vindo (a) ao meu portifólio,<br><br>
+                Sou Candanga, moro no Estado do Goiás, munincípio de Novo Gama, cidade entorno de Brasília -DF. Minha jornada profissional teve início no ano de 2006, fiz estágio como Adolescente Aprendiz no Banco do Brasil, com isso tive interesse por tecnologia,
+                 aprendi a desmontar, montar e configurar meu desktop, tenho facilidade em aprendizado apenas olhando e claro que pesquiso bastante. Mesmo com todos os indícios para tecnologia, escolhi o curso de Letras Português, outra paixão é leitura,
+                 gasto horas lendo livros e Newsletters sobre tecnologia. Estagiei em órgão público de 2009 a 2011, sendo efetivada como Auxiliar Admistrativo de 2011 a 2015, decidi atuar como revisora, fui atrás e consegui, trabalhei por 2 anos para o Cebraspe.
+                 Não me identifiquei com a área, achei muito limitada, entrei para a rede de comércio e varejo no ano de 2019 até 2021, mas decidi retornar aos estudos. Participei de um processo seletivo para revisor de textos do TCU em 2022, porém, resolvi estudar TI de fato, sendo esse 
+                 o marco inicial. Atualmente, faço projetos de estudos para iniciar trabalhos próprios. Sobre o inglês, aprendi sozinha aos 7 anos de idade 
+                 com livros de banca de jornal com fita cassete, mas devido a falta de recursos parei com os estudos. Pratico inglês durante os estudos de desenvolvimento web. 
+                 Meu hobby é leitura e tocar guitarra!<br>
+            </p>
+        </div>
+            <picture>
+                <img src="./img/20220511_082132 - Copia.jpg" alt="imagem Yndianara"  id="img-yndianara"/>
+            </picture>
+            <div class="gradu">
+                <h4>Formação Acadêmica <img src="./img/school.png" alt="icone universidade" width="32" height="32" /></h4>
+                <ul>                    
+                    <li>Graduada em Letras Português <span>2012</span> <img src="./img/graduation-hat-and-diploma.png" alt="capelo" width="32" height="32"/></li> 
+                    <li>Cursando Análise e desenvolvimento de sistemas <span>2022-2024</span> <img src="/img/chip.png" alt="img educacao" width="42" height="42"></li>
+                </ul>
+                <ul>
+                    <h4>Cursos Intensivos <img src="./img/open-book.png" alt="icone-livro" width="32" height="32" /></h4>
+                    <li>Tech Academy .StartSe - Desenvolvedor Full-Stack <strong><span>(120h)</span></strong><strong><span>2022</span></strong>  <img src="./img/coding.png" alt="icone dev" width="32" height="32"></li>
+                </ul>               
+            </div>
+    </section>
+        <form id="form" action="https://www.google.com"> <!--Será redirecionado para o Google devido a falta do banco de dados-->
+        <section>            
+            <h2>Formulário de Interesses</h2>
+            <p><label for="userName">Digite seu nome:</p>
+            <input type="text" name="userName" size=40 maxlength=40 placeholder="Digite seu nome completo" id="userName" required>
+            <p><label for="userJob">Digite sua profissão:</p>
+            <input type="text" name="userJob" size="40" maxlength="40" placeholder="Digite sua profissão" id="userJob" />
+            <p><label for="userComment">Agora que sabe um pouco a meu respeito, conte-me o que deseja em sua Web: </label></p>
+            <textarea name="userComment" cols="30" rows="4" id="userComment"></textarea>
+            <!--<p class="question" hidden >Você tem o hábito de ler regularmente?</p>--> <!--Item ficará oculto por não condizer com o assunto-->
+            <fieldset>
+                <legend>Qual o dispositivo que você utiliza para acessar a Web?</legend>
+                <input type="checkbox" id="smart" name="smart" value="A"><label for="smart"> Smartphone</label>
+                <input type="checkbox" id="desk" name="desk" value="B"><label for="desk"> Desktop/Notebook</label>
+                <input type="checkbox" id="tab" name="tab" value="C"><label for="tab"> Tablet</label>
+            </fieldset>
+            <p>Agora que já concluiu, pode clicar no botão enviar! Até breve</p>
+        <input id="form-button" type="submit" value="ENVIAR">                
+        </section>
+    </form>
+    <footer>
+        <section>
+            <figure>
+                <a href="#home"><img src="/img/favicon-32x32.png" alt="logo-y" /></a>
+            </figure>
+        <p>Estou disponível para executar seu projeto. Entre em contato para mais informações</p>
+        <p>Yndianara da Silva Santos</p>
+        <p>Copyright 2022  All Rights Reserved</p>
+        <a class="social" href="https://www.linkedin.com/in/yndianara-silva-67b08a250/"><img src="/img/linkedin.png" alt="icone-linkedin" width="32" height="32"></a>
+        <a class="social" href="http://yndianaradev.ml/Nutrissum/"><img src="/img/portfolio.png" alt="icone-portfolio" width="32" height="32"></a>
+        <a class="social" href="https://github.com/DevYndianara"><img src="/img/github.png" alt="icone-git" width="32" height="32"></a>        
+        </section>
+    </footer>
+</body>
+</html>
