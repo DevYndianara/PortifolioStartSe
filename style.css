@@ -18,25 +18,30 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /*padding: 0rem 10vw;*/ /*valor proporcional ao navegador*/
-    border: red 1px solid;
+    padding: 0rem 10vw; /*valor proporcional ao navegador*/
     margin: 0;
+}
+#title-home {
+    margin: 0.5rem;
 }
 #title-home a {
     font-family: 'Leckerli One', cursive;
     color: #111111;
-    padding: 1rem 0 0 5rem;
-    font-size: 2.5rem;
-    border: red 1px solid;
+    padding: 1rem;
+    font-size: 3rem;
+}
+.top-bar {
+    display: inline-block;
+    justify-content: space-between;
+    align-items: right; /*alinhamento links*/
+    padding: 1rem;
+    margin: 0.5rem 1rem;
 }
 .nav-itens{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center; /*alinhamento links*/
     font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    font-weight: bold;
     color: #111111;
-    border: red 1px solid;
 }
 .nav-itens:hover {
     color: #00ffff;
