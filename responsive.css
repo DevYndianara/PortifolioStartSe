@@ -2,6 +2,7 @@
     nav {
         text-align: center;
         justify-content: space-around;
+        flex-direction: column; /*Para ficar abaixo do titlr*/
     }
     .top-bar {
         width: 100vw;
@@ -26,23 +27,23 @@
     .gradu img, h3 {
         display: none;
     }
-    .container {
+    /*.container {
         margin: 0;
         padding: 0;
         width: 100vw;
-    }
+    }*/
     .column-left p {
         justify-content: center;
         display: flex;
         flex-wrap: wrap;
-        font-size: 0.8rem;
+        font-size: 1rem;
         line-height: normal;
         width: 60vw;
         height: 0vw;
         padding: 0;
         margin: 0;
     }
-    .gradu h4, ul li {
+    .gradu, .education /*h4, ul li*/ { /*Itens serem estilizados a parte*/
         width: 100vw;
         font-size: 0.5rem;
         flex-direction: column;
@@ -50,10 +51,10 @@
         margin: 0;
         line-height: normal;
     }
-    .education {
+    /*.education {
         width: 100vw;
         flex-direction: column;
-    }
+    }*/ /*Agrupado no elemento acima*/
     h1, h2 {
         margin: 0;
         padding: 0;
