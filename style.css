@@ -9,6 +9,8 @@
 */
 * {
     font-family: 'Special Elite', cursive;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialised;
 }
 
 /*Cabeçalho e navegação*/
@@ -17,6 +19,7 @@ nav {
     background-color: #9932CC;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
     padding: 0rem 10vw; /*valor proporcional ao navegador*/
     margin: 0;
@@ -156,8 +159,10 @@ form p, legend {
 }
 #form-button {
     font-family: 'Press Start 2P', cursive; 
-    display: inline-block;
-    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px 40px;
     width: 25vw;
     padding: 1rem 2rem;
     font-size: 1rem;
@@ -228,9 +233,10 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    padding: 20px;
+    padding: 2rem 2rem;
 }
 footer p {
+    display: flex;
     line-height: 2rem;
     text-align: center;
     color: #fff ;

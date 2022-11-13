@@ -1,0 +1,82 @@
+@media (max-width: 630px) {
+    nav {
+        top: 80px;
+        text-align: center;
+        justify-content: space-around;
+    }
+    ul .top-bar{
+        background-color: #9932CC;
+    }
+    .top-bar {
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .nav-itens {
+        justify-content: center;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #home-image, #img-yndianara {
+        display: none;
+    }
+    .column-left p {
+        font-size: 20px;
+    }
+    div .container {
+        padding: 0;
+        margin: 0;
+    }
+    .column-left p {
+        justify-content: center;
+        display: flex;
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+    }
+    .gradu img {
+        display: none;
+    }
+    h1, h2 {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        text-align: center;
+    }
+    .about-dev {
+        font-size: 15px;
+        flex-direction: column;
+        line-height: normal;
+    }
+    .gradu {
+        font-size: 15px;
+        grid-column: auto;
+        flex-direction: column;
+        width: 100%;
+    }
+    form {
+        margin: 0 auto;
+        width: 100%;
+    }
+    form label, #userComent, fieldset, input {
+        display: flex;
+        flex-direction: column;
+    }
+    input{
+        align-self: center;
+    }
+    footer {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        line-height: normal;
+    }
+
+}
