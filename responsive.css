@@ -2,11 +2,11 @@
 @media screen and (max-width: 630px) {
     
     header {
-        width: 80vw;
+        width: 100vw;
         flex-direction: column; /*Para ficar abaixo do titlr*/
     }
     nav  {
-        width: 80vw;
+        width: 100vw;
         margin: 0;
         padding: 0;
         justify-content: space-around;
@@ -40,28 +40,29 @@
         display: none;
     }
     #about{
-        max-width: 80vw;
-        max-height: 80vw;
+        width: 100vw;
+        height: 80vw;
     }
-    .education {
+    .education, .gradu {
         flex-direction: column;
-        max-width: 80vw;
-        max-height: 80vw;
+        width: 80vw;
+        height: 80vw;
         align-items: center;
         padding: 0;
         margin: 0;
     }
     .about-dev {
         display: block;
-        max-width: 70vw;
-        max-height: 80vw;
+        width: 100vw;
+        height: 80vw;
         line-height: normal;
         font-size: 0.5rem;
         margin: 0;
         padding: 0;
     }
-    .gradu h4, ul li { /*Itens serem estilizados a parte*/
-        width: 70vw;
+    .gradu ul li { /*Itens serem estilizados a parte*/
+        width: 100vw;
+        height: 70vw;
         font-size: 0.5rem;
         padding: 0;
         margin: 0;
@@ -71,8 +72,7 @@
     }
     form {
         display: block;
-        width: 80vw;
-        max-height: 80vw;
+        width: 100vw;
         padding: 2rem;
         margin: 0;
         font-size: 0.8rem;
@@ -81,7 +81,7 @@
         align-items: center;
     }
     footer p {
-        width: 80vw;
+        width: 100vw;
         display: flex;
         font-size: 0.8rem;
         flex-direction: column;
