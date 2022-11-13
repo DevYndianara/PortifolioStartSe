@@ -1,6 +1,5 @@
 @media screen and /*(min-width: 360px) and */(max-width: 768px) {
     nav {
-        top: 80px;
         text-align: center;
         justify-content: space-around;
     }
@@ -11,23 +10,21 @@
         margin: 0;
         padding: 0;
     }
-    #CTA-button {
-        display: none;
-    }
-
     .nav-itens {
         font-size: 1rem;
         background-color: #9932CC;
+        border-radius: 10px 60px;
         justify-content: center;
         cursor: pointer;
-        margin: 0;
+        margin: 0.2rem 0.2rem 0.2rem 0.2rem;
         padding: 1rem;
         position: relative;
         text-align: center;
         display: flex;
         flex-wrap: wrap;
     }
-    #home-image, #img-yndianara {
+    #home-image, #img-yndianara, 
+    #CTA-button, .gradu img {
         display: none;
     }
     .column-left p {
@@ -40,27 +37,32 @@
         padding: 0;
         margin: 0;
     }
-    .education img {
-        display: none;
-    }
-    .education h4, ul li {
+    .gradu h4, ul li {
         width: 100vw;
         font-size: 0.8rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
         padding: 0;
         margin: 0;
         line-height: normal;
     }
-    h1, h3, h2 {
+    .education {
+        width: 100vw;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    h3 {
+        padding: 0.5rem;
+    }
+    h1, h2 {
         margin: 0;
         padding: 0;
     }
     .about-dev {
         width: 100vw;
         font-size: 0.8rem;
+        padding: auto;
         display: grid;
         line-height: normal;
     }
@@ -72,7 +74,6 @@
         flex-direction: column;
         grid-column: auto;
         align-items: center;
-        border: 1px red solid;
     }
     footer p {
         width: 100vw;
