@@ -1,4 +1,4 @@
-@media screen and /*(min-width: 360px) and */(max-width: 768px) {
+@media screen and (min-width: 360px) and (max-width: 768px) {
     nav {
         text-align: center;
         justify-content: space-around;
@@ -27,11 +27,17 @@
     #CTA-button, .gradu img {
         display: none;
     }
+    .container {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+    }
     .column-left p {
         justify-content: center;
         display: flex;
         flex-wrap: wrap;
-        font-size: 1.5rem;
+        font-size: 0.8rem;
+        line-height: normal;
         width: 60vw;
         height: 0vw;
         padding: 0;
@@ -39,7 +45,7 @@
     }
     .gradu h4, ul li {
         width: 100vw;
-        font-size: 0.8rem;
+        font-size: 0.5rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -53,7 +59,7 @@
         flex-wrap: nowrap;
     }
     h3 {
-        padding: 0.5rem;
+        display: none;
     }
     h1, h2 {
         margin: 0;
@@ -61,9 +67,9 @@
     }
     .about-dev {
         width: 100vw;
-        font-size: 0.8rem;
+        font-size: 0.5rem;
         padding: auto;
-        display: grid;
+        flex-direction: column;
         line-height: normal;
     }
     form {
