@@ -1,4 +1,4 @@
-@media screen and (min-width: 360px) and (max-width: 630px) {
+@media screen and (max-width: 630px) {
     nav {
         text-align: center;
         justify-content: space-around;
@@ -9,6 +9,9 @@
         align-items: center;
         margin: 0;
         padding: 0;
+    }
+    #home, #about {
+        flex-direction: column;
     }
     .nav-itens {
         font-size: 1rem;
@@ -24,7 +27,7 @@
         flex-wrap: wrap;
     }
     #home-image, #img-yndianara, 
-    #CTA-button, .gradu img {
+    #CTA-button, .gradu img, h3, .gradu {
         display: none;
     }
     .container {
@@ -56,9 +59,6 @@
     .education {
         width: 100vw;
         flex-direction: column;
-    }
-    h3 {
-        display: none;
     }
     h1, h2 {
         margin: 0;
