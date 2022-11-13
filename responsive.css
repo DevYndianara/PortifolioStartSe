@@ -12,7 +12,7 @@
         display: flex; /*Corrigir posição para baixo*/
         margin: 0;
         padding: 0;
-        flex-direction: column; /*Corrigir posição para baixo*/
+        /*flex-direction: column;/* /*Corrigir posição para baixo*/
     }
     .nav-itens {
         font-size: 1rem;
@@ -46,10 +46,10 @@
         padding: 0;
         margin: 0;
     }
-    .gradu, .education /*h4, ul li*/ { /*Itens serem estilizados a parte*/
+    .gradu /*h4, ul li*/ { /*Itens serem estilizados a parte*/
         width: 100vw;
         font-size: 0.5rem;
-        flex-direction: column;
+        /*flex-direction: column;*/
         padding: 0;
         margin: 0;
         line-height: normal;
@@ -60,10 +60,10 @@
         font-size: 0.5rem;
         flex-direction: column;
     }
-    /*.education {
+    .education {
         width: 100vw;
         flex-direction: column;
-    }*/ /*Agrupado no elemento acima*/
+    } /*Agrupado no elemento acima*/
     h1, h2 {
         margin: 0;
         padding: 0;
@@ -75,7 +75,6 @@
         flex-wrap: wrap;
         padding: 0;
         margin: 0;
-        flex-direction: column;
         line-height: normal;
     }
     form {
