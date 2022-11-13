@@ -1,4 +1,4 @@
-@media screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (min-width: 360px) and (max-width: 630px) {
     nav {
         text-align: center;
         justify-content: space-around;
@@ -55,8 +55,7 @@
     }
     .education {
         width: 100vw;
-        display: flex;
-        flex-wrap: nowrap;
+        flex-direction: column;
     }
     h3 {
         display: none;
