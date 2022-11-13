@@ -1,83 +1,153 @@
 @media screen and (max-width: 630px) {
-    nav {
-        text-align: center;
-        justify-content: space-around;
+    header {
+        width: 80vw;
         flex-direction: column; /*Para ficar abaixo do titlr*/
     }
-    .top-bar {
-        width: 100vw;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap; /*Corrigir posição para baixo*/
-        display: flex; /*Corrigir posição para baixo*/
+    nav  {
+        width: 80vw;
         margin: 0;
         padding: 0;
-        /*flex-direction: column;/* /*Corrigir posição para baixo*/
+        justify-content: space-around;
+        flex-direction: row;
     }
-    .nav-itens {
+    .top-bar {
+        justify-content: space-around;
+        align-items: center;
+        display: inline-block;
+        margin: 0;
         font-size: 1rem;
         background-color: #9932CC;
         border-radius: 10px 60px;
-        justify-content: center;
+        /*justify-content: center;*/
         cursor: pointer;
         margin: 0.2rem 0.2rem 0.2rem 0.2rem;
         padding: 1rem;
-        position: relative;
         text-align: center;
+    }
+    .column-left p {
+        font-weight: 700;
+        display: flex;
+        flex-wrap: wrap;
+        line-height: normal;
+        width: 50vw;
+        padding: 0.5rem;
+        margin: 0.5rem;
     }
     #CTA-button, 
     #home-image, #img-yndianara, 
-    .gradu img, h3 {
+    .gradu img {
         display: none;
     }
-    /*.container {
-        margin: 0;
-        padding: 0;
-        width: 100vw;
-    }*/
-    .column-left p {
-        justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 1rem;
-        line-height: normal;
-        width: 60vw;
-        height: 0vw;
-        padding: 0;
-        margin: 0;
-    }
-    .gradu /*h4, ul li*/ { /*Itens serem estilizados a parte*/
-        width: 100vw;
-        font-size: 0.5rem;
-        /*flex-direction: column;*/
-        padding: 0;
-        margin: 0;
-        line-height: normal;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .gradu ul li {
-        font-size: 0.5rem;
-        flex-direction: column;
+    #about{
+        width: 80vw;
     }
     .education {
-        width: 100vw;
         flex-direction: column;
-    } /*Agrupado no elemento acima*/
-    h1, h2 {
-        margin: 0;
-        padding: 0;
-    }
-    .about-dev {
-        width: 100vw;
-        font-size: 0.5rem;
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0;
-        margin: 0;
+        width: 80vw;
+        font-size: 0.8rem;
         line-height: normal;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    } 
+    h3, .gradu h4, ul li { /*Itens serem estilizados a parte*/
+        width: 70vw;
+        font-size: 0.8rem;
+        padding: 0;
+        margin: 0;
+        font-weight: 700;
+        line-height: normal;
+        flex-direction: column;
     }
     form {
+        display: block;
+        width: 80vw;
+        padding: 2rem;
+        margin: 0;
+        font-size: 0.8rem;
+        flex-direction: column;
+        grid-column: auto;
+        align-items: center;
+    }
+    footer p {
+        width: 80vw;
+        display: flex;
+        font-size: 0.8rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.5rem;
+    }
+}
+@media screen and (min-width: 730px) and (max-width: 1024px) {
+    header {
+        width: 100vw;
+        flex-direction: column; /*Para ficar abaixo do titlr*/
+    }
+    nav  {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .top-bar {
+        justify-content: space-around;
+        align-items: center;
+        display: inline-block;
+        margin: 0;
+        font-size: 1rem;
+        background-color: #9932CC;
+        border-radius: 10px 60px;
+        /*justify-content: center;*/
+        cursor: pointer;
+        margin: 0.2rem 0.2rem 0.2rem 0.2rem;
+        padding: 1rem;
+        text-align: center;
+    }
+    .column-left{
+        
+    }
+    .column-left p {
+        font-weight: 700;
+        display: flex;
+        flex-wrap: wrap;
+        line-height: normal;
+        width: 70vw;
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+    .gradu img, #home-image {
+        display: none;
+    }
+    #about{
+        width: 100vw;
+    }
+    #img-yndianara {
+        float: none;
+        position: relative;
+        justify-content: center;
+    }
+    .education {
+        flex-direction: column;
+        width: 100vw;
+        font-size: 0.8rem;
+        line-height: normal;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    } 
+    .gradu h4, ul li { /*Itens serem estilizados a parte*/
+        width: 100vw;
+        font-size: 1rem;
+        padding: 0;
+        margin: 0;
+        font-weight: 700;
+        line-height: normal;
+        flex-direction: column;
+    }
+    form {
+        display: flex;
         width: 100vw;
         padding: 2rem;
         margin: 0;
@@ -90,7 +160,89 @@
         width: 100vw;
         display: flex;
         font-size: 0.8rem;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.5rem;
+    }
+}
+@media screen and (min-width: 1201px) {
+    header {
+        width: 100vw;
+        flex-direction: column; /*Para ficar abaixo do titlr*/
+    }
+    nav  {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .top-bar {
+        justify-content: space-around;
+        align-items: center;
+        display: inline-block;
+        margin: 0;
+        font-size: 1rem;
+        background-color: #9932CC;
+        border-radius: 10px 60px;
+        /*justify-content: center;*/
+        cursor: pointer;
+        margin: 0.2rem 0.2rem 0.2rem 0.2rem;
+        padding: 1rem;
+        text-align: center;
+    }
+    .column-left p {
+        font-weight: 700;
+        display: flex;
+        flex-wrap: wrap;
+        line-height: normal;
+        width: 70vw;
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+    #home-image,
+    .gradu img {
+        display: none;
+    }
+    #about{
+        width: 100vw;
+    }
+    #img-yndianara {
+        max-width: 30%;
+        position: relative;
+    }
+    .education {
         flex-direction: column;
+        width: 100vw;
+        font-size: 0.8rem;
+        line-height: normal;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    } 
+    .gradu h4, ul li { /*Itens serem estilizados a parte*/
+        width: 100vw;
+        font-size: 1rem;
+        padding: 0;
+        margin: 0;
+        font-weight: 700;
+        line-height: normal;
+        flex-direction: column;
+    }
+    form {
+        display: flex;
+        width: 100vw;
+        padding: 2rem;
+        margin: 0;
+        font-size: 0.8rem;
+        flex-direction: column;
+        grid-column: auto;
+        align-items: center;
+    }
+    footer p {
+        width: 100vw;
+        display: flex;
+        font-size: 0.8rem;
         justify-content: center;
         align-items: center;
         line-height: 1.5rem;
