@@ -8,8 +8,11 @@
         width: 100vw;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap; /*Corrigir posição para baixo*/
+        display: flex; /*Corrigir posição para baixo*/
         margin: 0;
         padding: 0;
+        flex-direction: column; /*Corrigir posição para baixo*/
     }
     .nav-itens {
         font-size: 1rem;
@@ -50,6 +53,12 @@
         padding: 0;
         margin: 0;
         line-height: normal;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gradu ul li {
+        font-size: 0.5rem;
+        flex-direction: column;
     }
     /*.education {
         width: 100vw;
