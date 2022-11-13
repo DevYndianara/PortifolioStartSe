@@ -121,7 +121,7 @@ form {
     justify-content: center;
     height: 80vh; /*view height*/
     background-color: #222222;
-    background-image: url(/img/network.png);
+    background-image: url(img/network.png);
     color: #fff;
     padding: 8vh 20vw; /*Posicionamento do form entre left e right*/
 }
