@@ -162,7 +162,7 @@
     }
     #about{
         /*Remover esse item, deixar apenas a modificação da altura*/
-        height: 55vw;
+        height: 95vw;
         background-color: #9932CC;
         background: -webkit-linear-gradient(bottom left #9932CC 10%, #4ec6ca 80%);
         background: -moz-linear-gradient(bottom left, #9932CC 10%, #4ec6ca 80%);
@@ -208,7 +208,7 @@
     }
     form {
         display: block; /*Alterar para flex*/
-        height: 30vw; /*Alterar para altura*/
+        height: 60vw; /*Alterar para altura*/
         padding: 1rem;
         margin: 0;
         font-size: 0.8rem;
