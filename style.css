@@ -54,7 +54,7 @@ nav {
 
 /*Sobre*/
 #about {
-    height: 95vw;
+    height: 50vw;
     background-color: #9932CC;
     background: -webkit-linear-gradient(bottom left #9932CC 10%, #4ec6ca 80%);
     background: -moz-linear-gradient(bottom left, #9932CC 10%, #4ec6ca 80%);
@@ -101,18 +101,19 @@ span {
     color: #00ffff;
 }
 article {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     float: right;
     margin: 0;
     padding: 0;
-    height: 25vw;
-    width: 30vw;
+    height: 25vh;
+    width: 30vh;
 }
 #img-yndianara {
     box-shadow: 5px 5px 5px #00ffff;
     width: 60%;
     height: 80%;
+    float: right;
+    display: none;
     margin: 0;
     border-radius: 5px 90px;
     padding: 1rem;
@@ -133,13 +134,16 @@ form {
     display: flex;
     align-self: center;
     justify-content: center;
-    height: 80vh; /*view height*/
+    margin: 0;
+    width: 100vw;
+    height: 40vh; /*view height*/
     background-color: #222222;
     background-image: url(img/network.png);
     color: #fff;
     padding: 8vh 20vw; /*Posicionamento do form entre left e right*/
 }
 form p, legend {
+    background-color: #222222;
     padding: 10px 10px;
     margin: 5px 15px;
     line-height: 1rem;
@@ -246,6 +250,7 @@ footer {
     padding: 2rem 2rem;
 }
 footer p {
+    height: 5vh;
     display: flex;
     line-height: 2rem;
     justify-content: center;
