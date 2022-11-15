@@ -54,8 +54,12 @@ nav {
 
 /*Sobre*/
 #about {
-    background: #707070;
-    height: 80vw;
+    height: 95vw;
+    background-color: #9932CC;
+    background: -webkit-linear-gradient(bottom left #9932CC 10%, #4ec6ca 80%);
+    background: -moz-linear-gradient(bottom left, #9932CC 10%, #4ec6ca 80%);
+    background: -o-linear-gradient(bottom left, #9932CC 10%, #4ec6ca 80%);
+    background: linear-gradient(to top right, #9932CC 10%, #4ec6ca 80%);
 }
 .education {
     display: flex;
@@ -78,28 +82,38 @@ h3 {
     color: #00ffff;
 }
 .about-dev {
-    line-height: 1.8rem;
+    line-height: 1.5rem;
     align-items: right;
     margin-right: 5px;
     font-weight: bold;
 }
 .gradu {
-    display: inline-block;
+    line-height: 1.5rem;
+    display: grid;
     justify-content: left;
     margin: 1vw ;
     padding: 2vw;
+    width: 55vw;
     text-align: left;
     font-weight: bold;
 }
 span {
     color: #00ffff;
 }
+article {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin: 0;
+    padding: 0;
+    height: 25vw;
+    width: 30vw;
+}
 #img-yndianara {
     box-shadow: 5px 5px 5px #00ffff;
-    width: 20%;
-    height: 40%;
-    float: right;
-    margin: 0 9rem 0;
+    width: 60%;
+    height: 80%;
+    margin: 0;
     border-radius: 5px 90px;
     padding: 1rem;
 }
@@ -156,19 +170,17 @@ form p, legend {
 }
 #form-button {
     font-family: 'Press Start 2P', cursive; 
-    /*display: flex;*/ /*Acrescentar o posicionamento do botão para o centro, display block*/
-    /*flex-wrap: wrap;*/
-    /*justify-content: center;*/
-    margin-top: 40px;
+    display: block;
+    margin-top: 40px; /*Removido outro 40px*/
     width: 25vw;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 1rem 2rem;
     font-size: 1rem;
     border: none;
     color: #222222;
     background-color: #9932CC;
     cursor: pointer;
     border-radius: 20px 35px 20px 35px;
-    align-items: center;
+    align-self: center;
 }
 #form-button:hover {
     background: #00ffff;

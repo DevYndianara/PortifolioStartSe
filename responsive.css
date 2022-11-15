@@ -39,49 +39,70 @@
     .gradu img, h3 {
         display: none;
     }
-    #about{
-        width: 100vw; /*Remover esse item, deixar apenas a modificação da altura*/
-        height: 80vw;
+    #home {
+        background-color: #9932CC;
+        background: -webkit-linear-gradient(bottom left #4ec6ca 10%, #fff 80%);
+        background: -moz-linear-gradient(bottom left, #4ec6ca 10%, #fff 80%);
+        background: -o-linear-gradient(bottom left, #4ec6ca 10%, #fff 80%);
+        background: linear-gradient(to top right, #4ec6ca 10%, #fff 80%);
     }
-    .education, .gradu { /*Colocar em grid o display e grid -template-columns 1fr 1fr*/
-        flex-direction: column;
-        width: 80vw;
+    #about{
+        /*Remover esse item, deixar apenas a modificação da altura*/
         height: 80vw;
-        align-items: center;
+        background-color: #9932CC;
+        background: -webkit-linear-gradient(bottom left #9932CC 10%, #4ec6ca 80%);
+        background: -moz-linear-gradient(bottom left, #9932CC 10%, #4ec6ca 80%);
+        background: -o-linear-gradient(bottom left, #9932CC 10%, #4ec6ca 80%);
+        background: linear-gradient(to top right, #9932CC 10%, #4ec6ca 80%);
+    }
+
+    .education { /*Colocar em grid o display e grid -template-columns 1fr 1fr*/
+        height: 30vw;
+        width: 100vw;
+        display: grid;
+        flex-direction: column;
         padding: 0;
         margin: 0;
+        border: 1px red solid;
+        color: #111111;
     }
     .about-dev {
-        display: block;
-        width: 100vw;
-        height: 80vw;
-        line-height: normal;
-        font-size: 0.5rem;
-        margin: 0;
-        padding: 0;
-    }
-    .gradu ul li { /*Itens serem estilizados a parte*/
-        width: 100vw;
-        height: 70vw;
-        font-size: 0.5rem;
-        padding: 0;
-        margin: 0;
-        font-weight: 700;
-        line-height: normal;
+        color: #111111;
         flex-direction: column;
+        line-height: normal;
+        font-size: 0.5rem;
+        margin: 0;
+        padding: 1rem 1rem;
+        border: 1px red solid;
+    }
+    .gradu {
+        color: #111111;
+        display: inline-block;
+        position: relative;
+        width: 40vw;
+        height: 30vw;
+        margin: 0;
+        padding: 1rem;
+        border: 1px red solid;
+        font-size: 0.5rem;
+        line-height: normal;
+    }
+    .about-dev::first-letter, h4::first-letter, h3::first-letter, span{
+        color: #111111;
     }
     form {
         display: block; /*Alterar para flex*/
-        width: 100vw; /*Alterar para altura*/
+        height: 95vw; /*Alterar para altura*/
         padding: 2rem;
         margin: 0;
         font-size: 0.8rem;
         flex-direction: column;
         grid-column: auto;
-        align-items: center; /*Aling-self: center*/
+        align-self: center; /*Aling-self: center*/
     }
     footer p {
         width: 100vw;
+        height: 5vw;
         display: flex;
         font-size: 0.8rem;
         flex-direction: column;
@@ -92,12 +113,14 @@
 }
 
 /*Responsividade tela celular na horizontal*/
-@media screen and /*(min-width: 730px) and */(max-width: 1024px) {
-    
-    header {
+@media screen and /*(min-width: 631px) and*/(max-width: 800px) { /*Acrescentado tam mínimo*/
+     /*Acrescentar responsividade para tela na horizontal*/
+     header {
+        width: 100vw;
         flex-direction: column; /*Para ficar abaixo do titlr*/
     }
     nav  {
+        width: 100vw;
         margin: 0;
         padding: 0;
         justify-content: space-around;
@@ -119,70 +142,112 @@
     }
     .column-left p {
         font-weight: 700;
+        display: flex;
+        flex-wrap: wrap;
         line-height: normal;
-        max-width: 70vw;
-        padding: 0;
-        margin: 0;
+        width: 50vw;
+        padding: 0.5rem;
+        margin: 0.5rem;
     }
-    .gradu img, #home-image {
+    #CTA-button, 
+    #home-image, #img-yndianara, 
+    .gradu img, h3 {
         display: none;
     }
+    #home {
+        background-color: #9932CC;
+        background: -webkit-linear-gradient(bottom left #4ec6ca 10%, #fff 80%);
+        background: -moz-linear-gradient(bottom left, #4ec6ca 10%, #fff 80%);
+        background: -o-linear-gradient(bottom left, #4ec6ca 10%, #fff 80%);
+        background: linear-gradient(to top right, #4ec6ca 10%, #fff 80%);
+    }
     #about{
-        max-width: 80vw;
-        max-height: 80vw;    
+        /*Remover esse item, deixar apenas a modificação da altura*/
+        height: 65vw;
+        background-color: #9932CC;
+        background: -webkit-linear-gradient(bottom left #9932CC 10%, #4ec6ca 80%);
+        background: -moz-linear-gradient(bottom left, #9932CC 10%, #4ec6ca 80%);
+        background: -o-linear-gradient(bottom left, #9932CC 10%, #4ec6ca 80%);
+        background: linear-gradient(to top right, #9932CC 10%, #4ec6ca 80%);
     }
-    #img-yndianara {
-        float: right;
-    }
-    .education {
-        flex-direction: column;
+    .education { /*Colocar em grid o display e grid -template-columns 1fr 1fr*/
+        height: 20vw;
         width: 100vw;
         font-size: 0.8rem;
         line-height: normal;
         align-items: center;
         padding: 0;
         margin: 0;
-    } 
-    .gradu h4, ul li { /*Itens serem estilizados a parte*/
-        width: 100vw;
-        font-size: 1rem;
-        padding: 0;
-        margin: 0;
-        font-weight: 700;
+        border: 1px red solid;
+        color: #111111;
+    }
+    .about-dev {
+        color: #111111;
+        display: flex;
+        flex-wrap: wrap;
         line-height: normal;
-        flex-direction: column;
+        font-size: 0.8rem;
+        margin: 0;
+        padding: 1rem 1rem;
+        border: 1px red solid;
+    }
+    .gradu {
+        color: #111111;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        width: 80vw;
+        height: 30vw;
+        margin: 0;
+        padding: 1rem;
+        border: 1px red solid;
+        font-size: 0.8rem;
+        line-height: normal;
+    }
+    .about-dev::first-letter, h4::first-letter, h3::first-letter, span {
+        color: #111111;
     }
     form {
-        display: flex;
-        max-width: 100vw;
+        display: block; /*Alterar para flex*/
+        height: 60vw; /*Alterar para altura*/
         padding: 2rem;
         margin: 0;
         font-size: 0.8rem;
         flex-direction: column;
         grid-column: auto;
-        align-items: center;
+        align-self: center; /*Aling-self: center*/
     }
     footer p {
-        max-width: 100vw;
+        width: 60vw;
+        height: 40vw;
         display: flex;
         font-size: 0.8rem;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         line-height: 1.5rem;
     }
 }
 
+
 /*Responsividade TV*/
 @media screen and (min-width: 1201px) {
     #about{
-        height: 65vw;
+        /*Remover esse item, deixar apenas a modificação da altura*/
+        height: 30vw;
+        background-color: #9932CC;
+        background: -webkit-linear-gradient(bottom left #9932CC 10%, #4ec6ca 80%);
+        background: -moz-linear-gradient(bottom left, #9932CC 10%, #4ec6ca 80%);
+        background: -o-linear-gradient(bottom left, #9932CC 10%, #4ec6ca 80%);
+        background: linear-gradient(to top right, #9932CC 10%, #4ec6ca 80%);
     }
     form {
-        height: 50vw;
+        height: 80vw;
         padding: 2rem;
         align-items: center;
     }
     footer p {
         text-align: center;
+        
     }
 }
