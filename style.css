@@ -156,18 +156,19 @@ form p, legend {
 }
 #form-button {
     font-family: 'Press Start 2P', cursive; 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 40px 40px;
+    /*display: flex;*/ /*Acrescentar o posicionamento do botão para o centro, display block*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: center;*/
+    margin-top: 40px;
     width: 25vw;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 1rem 2rem;
     font-size: 1rem;
     border: none;
     color: #222222;
     background-color: #9932CC;
     cursor: pointer;
     border-radius: 20px 35px 20px 35px;
+    align-items: center;
 }
 #form-button:hover {
     background: #00ffff;

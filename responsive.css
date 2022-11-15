@@ -1,6 +1,6 @@
 /*Responsividade tela celular vertical*/
 @media screen and (max-width: 630px) {
-    
+    /*Acrescentar responsividade para tela na horizontal*/
     header {
         width: 100vw;
         flex-direction: column; /*Para ficar abaixo do titlr*/
@@ -40,10 +40,10 @@
         display: none;
     }
     #about{
-        width: 100vw;
+        width: 100vw; /*Remover esse item, deixar apenas a modificação da altura*/
         height: 80vw;
     }
-    .education, .gradu {
+    .education, .gradu { /*Colocar em grid o display e grid -template-columns 1fr 1fr*/
         flex-direction: column;
         width: 80vw;
         height: 80vw;
@@ -71,14 +71,14 @@
         flex-direction: column;
     }
     form {
-        display: block;
-        width: 100vw;
+        display: block; /*Alterar para flex*/
+        width: 100vw; /*Alterar para altura*/
         padding: 2rem;
         margin: 0;
         font-size: 0.8rem;
         flex-direction: column;
         grid-column: auto;
-        align-items: center;
+        align-items: center; /*Aling-self: center*/
     }
     footer p {
         width: 100vw;
