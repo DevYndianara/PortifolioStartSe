@@ -1,5 +1,5 @@
 /*Responsividade tela celular vertical*/
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 630px) {
     /*Acrescentar responsividade para tela na horizontal*/
     header {
         width: 100vw;
@@ -112,7 +112,7 @@
 }
 
 /*Responsividade tela celular na horizontal*/
-@media screen and (min-width: 731px) and (max-width: 1023px) { /*Acrescentado tam mínimo*/
+@media screen and (min-width: 63px) and (max-width: 1023px) { /*Acrescentado tam mínimo*/
      /*Acrescentar responsividade para tela na horizontal*/
      header {
         width: 100vw;
