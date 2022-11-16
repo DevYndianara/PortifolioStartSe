@@ -100,20 +100,20 @@ h3 {
 span {
     color: #00ffff;
 }
-article {
-    display: grid;
+{
+    /*display: grid;
     float: right;
     margin: 0;
     padding: 0;
     height: 25vh;
-    width: 30vh;
+    width: 30vh;*/
 }
-#img-yndianara {
+picture #img-yndianara {
     box-shadow: 5px 5px 5px #00ffff;
     width: 60%;
     height: 80%;
     float: right;
-    display: none;
+    display: grid;
     margin: 0;
     border-radius: 5px 90px;
     padding: 1rem;
