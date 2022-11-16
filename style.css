@@ -56,10 +56,10 @@ nav {
 #about {
     height: 50vw;
     background-color: #9932CC;
-    background: -webkit-linear-gradient(bottom left #9932CC 10%, #4ec6ca 80%);
-    background: -moz-linear-gradient(bottom left, #9932CC 10%, #4ec6ca 80%);
-    background: -o-linear-gradient(bottom left, #9932CC 10%, #4ec6ca 80%);
-    background: linear-gradient(to top right, #9932CC 10%, #4ec6ca 80%);
+    background: -webkit-linear-gradient(bottom left #9932CC 10%, #4ec6ca 90%);
+    background: -moz-linear-gradient(bottom left, #9932CC 10%, #4ec6ca 90%);
+    background: -o-linear-gradient(bottom left, #9932CC 10%, #4ec6ca 90%);
+    background: linear-gradient(to top right, #9932CC 10%, #4ec6ca 90%);
 }
 .education {
     display: flex;
