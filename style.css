@@ -55,7 +55,6 @@ nav {
 /*Sobre*/
 #about {
     height: 100vh;
-    border: 1px red solid;
     background-color: #9932CC;
     background: -webkit-linear-gradient(bottom left #9932CC 10%, #4ec6ca 90%);
     background: -moz-linear-gradient(bottom left, #9932CC 10%, #4ec6ca 90%);
@@ -100,17 +99,6 @@ h3 {
 }
 span {
     color: #00ffff;
-}
-#img-yndianara {
-    box-shadow: 5px 5px 5px #00ffff;
-    width: 20%;
-    height: 40%;
-    float: right;
-    margin-right: 8rem ;
-    padding: 1rem;
-    justify-content: right;
-    border-radius: 5px 90px;
-    border: 1px red solid;
 }
 /*Fim sobre*/
 
