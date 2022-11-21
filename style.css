@@ -54,7 +54,8 @@ nav {
 
 /*Sobre*/
 #about {
-    height: 50vw;
+    height: 100vh;
+    border: 1px red solid;
     background-color: #9932CC;
     background: -webkit-linear-gradient(bottom left #9932CC 10%, #4ec6ca 90%);
     background: -moz-linear-gradient(bottom left, #9932CC 10%, #4ec6ca 90%);
@@ -102,20 +103,22 @@ span {
 }
 
     /*display: grid;
-    float: right;
+    
     margin: 0;
     padding: 0;
     height: 25vh;
     width: 30vh;*/
- #img-yndianara {
+.yndianara {
+    display: none;
+    flex-wrap: nowrap;
     box-shadow: 5px 5px 5px #00ffff;
-    width: 30%;
-    height: 40%;
-    float: right;
+    width: 10%;
+    height: 10%;
     display: grid;
     margin: 0;
     border-radius: 5px 90px;
     padding: 1rem;
+    border: 1px red solid;
 }
 /*Fim sobre*/
 
@@ -134,17 +137,15 @@ form {
     align-self: center;
     justify-content: center;
     margin: 0;
-    width: 100vw;
-    height: 40vh; /*view height*/
+    height: 100vh; /*view height*/
     background-color: #222222;
     background-image: url(img/network.png);
     color: #fff;
     padding: 8vh 20vw; /*Posicionamento do form entre left e right*/
 }
 form p, legend {
-    background-color: #222222;
-    padding: 10px 10px;
-    margin: 5px 15px;
+    padding: 1rem 1rem 0 0 ;
+    margin: 1rem 1rem;
     line-height: 1rem;
 }
 #smart, #desk, #tab {
