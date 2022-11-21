@@ -101,23 +101,15 @@ h3 {
 span {
     color: #00ffff;
 }
-
-    /*display: grid;
-    
-    margin: 0;
-    padding: 0;
-    height: 25vh;
-    width: 30vh;*/
-.yndianara {
-    display: none;
-    flex-wrap: nowrap;
+#img-yndianara {
     box-shadow: 5px 5px 5px #00ffff;
-    width: 10%;
-    height: 10%;
-    display: grid;
-    margin: 0;
-    border-radius: 5px 90px;
+    width: 20%;
+    height: 40%;
+    float: right;
+    margin-right: 8rem ;
     padding: 1rem;
+    justify-content: right;
+    border-radius: 5px 90px;
     border: 1px red solid;
 }
 /*Fim sobre*/
