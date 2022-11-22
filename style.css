@@ -65,40 +65,48 @@ nav {
     display: flex;
     flex-wrap: wrap;
     text-align: justify;
-    justify-content: center;
+    justify-content: space-between;
     /*margin-top: 20px;*/
     padding: 2rem;
     margin: 2vw;
+    width: 80vw;
+    border: 1px red solid;
 }
-h3 {
-    margin-top: 20px; /*Necessário reduzir o margin para não descer muito os outros elementos*/
+.education h3 {
     /*padding: 2rem;*/
     font-size: 2rem;
     text-align: center;
     color: #111111;
 }
-.about-dev::first-letter, h4::first-letter, h3::first-letter{
-    font-size: 3rem;
+.education::first-letter, h4::first-letter, h3::first-letter{
+    font-size: 2rem;
     color: #00ffff;
 }
-.about-dev {
+.education p {
     line-height: 1.5rem;
     align-items: right;
     margin-right: 5px;
     font-weight: bold;
 }
 .gradu {
-    line-height: 1.5rem;
+    line-height: 1rem;
     display: grid;
     justify-content: left;
-    margin: 1vw ;
+    margin: 2vw ;
     padding: 2vw;
-    width: 55vw;
+    width: 80vw;
     text-align: left;
     font-weight: bold;
+    border: red 1px solid;
 }
 span {
     color: #00ffff;
+}
+#img-dev {
+    width: 25%;
+    height: 60%;
+    float: right;
+    border: 1px red solid;
 }
 /*Fim sobre*/
 
