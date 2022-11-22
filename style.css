@@ -120,12 +120,15 @@ h2 {
 .question {
     margin: 20px;
 }
+.dados {
+    height: 100vh;
+}
 form {
     display: flex;
     align-self: center;
     justify-content: center;
     margin: 0;
-    height: 100vh; /*view height*/
+     /*view height*/
     background-color: #222222;
     background-image: url(img/network.png);
     color: #fff;

@@ -2,26 +2,22 @@
 @media screen and (max-width: 790px) {
     /*Acrescentar responsividade para tela na horizontal*/
     header {
-        width: 100vw;
         flex-direction: column; /*Para ficar abaixo do titlr*/
     }
     nav  {
-        width: 100vw;
-        margin: 0;
-        padding: 0;
         justify-content: space-around;
         flex-direction: row;
     }
     .top-bar {
         justify-content: space-around;
         align-items: center;
-        display: inline-block;
-        font-size: 1rem;
+        display: block;
+        font-size: 0.5rem;
         background-color: #9932CC;
         border-radius: 10px 60px;
         /*justify-content: center;*/
         cursor: pointer;
-        margin: 0.2rem 0.2rem 0.2rem 0.2rem;
+        margin: 0.1rem 0.1rem 0.1rem 0.1rem;
         padding: 1rem;
         text-align: center;
     }
@@ -34,7 +30,6 @@
         padding: 0.5rem;
         margin: 0.5rem;
     }
-    #CTA-button, 
     #home-image, #img-yndianara, 
     .gradu img, h3 {
         display: none;
@@ -48,24 +43,24 @@
     }
     #about{
         /*Remover esse item, deixar apenas a modificação da altura*/
-        height: 70vw;
+        height: 50vw;
         background-color: #9932CC;
-        background: -webkit-linear-gradient(bottom left #9932CC;  10%, #4ec6ca 80%);
-        background: -moz-linear-gradient(bottom left, #9932CC;  10%, #4ec6ca 80%);
-        background: -o-linear-gradient(bottom left, #9932CC;  10%, #4ec6ca 80%);
-        background: linear-gradient(to top right, #9932CC;10%, #4ec6ca 80%);
+        background: -webkit-linear-gradient(bottom left #9932CC  10%, #4ec6ca 80%);
+        background: -moz-linear-gradient(bottom left, #9932CC  10%, #4ec6ca 80%);
+        background: -o-linear-gradient(bottom left, #9932CC  10%, #4ec6ca 80%);
+        background: linear-gradient(to top right, #9932CC 10%, #4ec6ca 80%);
     }
-
     .education { /*Colocar em grid o display e grid -template-columns 1fr 1fr*/
-        height: 30vw;
-        width: 100vw;
         display: grid;
+        align-items: center;
+        text-align: center;
+        font-weight: 0.5rem;
         flex-direction: column;
         padding: 0;
         margin: 0;
         color: #111111;
     }
-    .about-dev {
+    .education p {
         color: #111111;
         flex-direction: column;
         line-height: normal;
@@ -77,8 +72,8 @@
         color: #111111;
         display: inline-block;
         position: relative;
-        width: 40vw;
-        height: 30vw;
+        width: 60vw;
+        height: 20vw;
         margin: 0;
         padding: 1rem;
         font-size: 0.5rem;
@@ -86,8 +81,9 @@
     }
     .about-dev::first-letter, h4::first-letter, h3::first-letter, span{
         color: #111111;
+        font-size: 0.5rem;
     }
-    form {
+    .dados {
         display: block; /*Alterar para flex*/
         height: 95vw; /*Alterar para altura*/
         padding: 2rem;
@@ -96,6 +92,9 @@
         flex-direction: column;
         grid-column: auto;
         align-self: center; /*Aling-self: center*/
+    }
+    #form-button {
+        width: 40vw;
     }
     footer {
         height: 50vw;
@@ -110,128 +109,6 @@
         line-height: 1rem;
     }
 }
-
-/*Responsividade tela celular na horizontal*/
-@media screen and (min-width: 790px) and (max-width: 1023px) {*/ /*Acrescentado tam mínimo*/
-     /*Acrescentar responsividade para tela na horizontal*/
-     header {
-        width: 100vw;
-        flex-direction: column; /*Para ficar abaixo do titlr*/
-    }
-    nav  {
-        width: 100vw;
-        margin: 0;
-        padding: 0;
-        justify-content: space-around;
-        flex-direction: row;
-    }
-    .top-bar {
-        justify-content: space-around;
-        align-items: center;
-        display: inline-block;
-        margin: 0;
-        font-size: 1rem;
-        background-color: #9932CC;
-        border-radius: 10px 60px;
-        /*justify-content: center;*/
-        cursor: pointer;
-        margin: 0.2rem 0.2rem 0.2rem 0.2rem;
-        padding: 1rem;
-        text-align: center;
-    }
-    .column-left p {
-        font-weight: 700;
-        display: flex;
-        flex-wrap: wrap;
-        line-height: normal;
-        width: 50vw;
-        padding: 0.5rem;
-        margin: 0.5rem;
-    }
-    #CTA-button, 
-    #home-image, #img-yndianara, 
-    .gradu img, h3 {
-        display: none;
-    }
-    #home {
-        background-color: #9932CC;
-        background: -webkit-linear-gradient(bottom left #4ec6ca 10%, #fff 80%);
-        background: -moz-linear-gradient(bottom left, #4ec6ca 10%, #fff 80%);
-        background: -o-linear-gradient(bottom left, #4ec6ca 10%, #fff 80%);
-        background: linear-gradient(to top right, #4ec6ca 10%, #fff 80%);
-    }
-    #about{
-        /*Remover esse item, deixar apenas a modificação da altura*/
-        height: 95vw;
-        background-color: #9932CC;
-        background: -webkit-linear-gradient(bottom left #9932CC 10%, #4ec6ca 80%);
-        background: -moz-linear-gradient(bottom left, #9932CC 10%, #4ec6ca 80%);
-        background: -o-linear-gradient(bottom left, #9932CC 10%, #4ec6ca 80%);
-        background: linear-gradient(to top right, #9932CC 10%, #4ec6ca 80%);
-    }
-    .education { /*Colocar em grid o display e grid -template-columns 1fr 1fr*/
-        height: 20vw;
-        width: 100vw;
-        font-size: 0.8rem;
-        line-height: normal;
-        align-items: center;
-        padding: 0;
-        margin: 0;
-        color: #111111;
-    }
-    .about-dev {
-        color: #111111;
-        display: flex;
-        flex-wrap: wrap;
-        line-height: normal;
-        font-size: 0.8rem;
-        margin: 0;
-        padding: 1rem 1rem;
-    }
-    .gradu {
-        color: #111111;
-        display: flex;
-        flex-wrap: wrap;
-        width: 50vw;
-        height: 40vw;
-        margin: 0;
-        padding: 0;
-        font-size: 0.8rem;
-        line-height: normal;
-    }
-    .gradu h4, ul li {
-        font-size: 0.8rem;
-        line-height: 0.8rem;
-    }
-    .about-dev::first-letter, h4::first-letter, h3::first-letter, span {
-        color: #111111;
-    }
-    form {
-        display: block; /*Alterar para flex*/
-        height: 60vw; /*Alterar para altura*/
-        padding: 1rem;
-        margin: 0;
-        font-size: 0.8rem;
-        flex-direction: column;
-        grid-column: auto;
-        justify-content: center;
-        align-self: center; /*Aling-self: center*/
-    }
-    footer {
-        height: 40vw;
-    }
-    footer p {
-        width: 60vw;
-        height: 40vw;
-        display: flex;
-        font-size: 0.8rem;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        line-height: 1.5rem;
-    }
-}
-
 /*Responsividade TV*/
 @media screen and (min-width: 1201px) {
     #about{
