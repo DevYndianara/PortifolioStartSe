@@ -55,6 +55,8 @@ nav {
 /*Sobre*/
 #about {
     height: 100vh;
+    margin: 0;
+    padding: 0;
     background-color: #9932CC;
     background: -webkit-linear-gradient(bottom left #9932CC 10%, #4ec6ca 90%);
     background: -moz-linear-gradient(bottom left, #9932CC 10%, #4ec6ca 90%);
@@ -65,15 +67,16 @@ nav {
     display: flex;
     flex-wrap: wrap;
     text-align: justify;
-    justify-content: space-between;
+    justify-content: center;
     /*margin-top: 20px;*/
-    padding: 2rem;
-    margin: 2vw;
-    width: 80vw;
+    /*padding: 2rem;*/
+    margin: 5vw;
+    width: 90vw;
+    height: 20vw;
     border: 1px red solid;
 }
 .education h3 {
-    /*padding: 2rem;*/
+    padding: 2rem;
     font-size: 2rem;
     text-align: center;
     color: #111111;
@@ -89,24 +92,26 @@ nav {
     font-weight: bold;
 }
 .gradu {
-    line-height: 1rem;
+    line-height: 0.5rem;
     display: grid;
-    justify-content: left;
-    margin: 2vw ;
+    grid-column: auto;
+    margin: 5vw;
     padding: 2vw;
-    width: 80vw;
-    text-align: left;
+    width: 90vw;
+    height: 40vw;
+    text-align: center;
     font-weight: bold;
-    border: red 1px solid;
 }
 span {
     color: #00ffff;
 }
 #img-dev {
-    width: 25%;
-    height: 60%;
-    float: right;
-    border: 1px red solid;
+    width: 20%;
+    height: 70%;
+    display: flexbox;
+    margin: 0;
+    padding-top: 2vw;
+    border-radius: 10px 60px;
 }
 /*Fim sobre*/
 
